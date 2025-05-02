@@ -1,0 +1,63 @@
+# Plant Vision – PRD
+
+## Overview
+Plant Vision is an AI-powered web application that allows users to submit photos of plants. The system uses computer vision and a trained model to predict the health state of the plant and identify possible diseases. The goal is to help plant owners quickly diagnose issues and receive actionable care advice.
+
+## Core Features
+- **Photo Submission**
+  - Users can upload or take a photo of a plant using their device.
+  - Supports common image formats (JPG, PNG).
+- **Health State Prediction**
+  - The app uses a computer vision model to analyze the image and predict if the plant is healthy or unhealthy.
+- **Disease Detection**
+  - If unhealthy, the model attempts to identify the most likely disease or issue (e.g., fungal infection, nutrient deficiency).
+- **Results Display**
+  - Shows the predicted health state, possible disease, and a confidence score.
+  - Provides care recommendations or next steps.
+- **History (Optional)**
+  - Users can view a history of their previous submissions and results.
+
+## User Experience
+- **Personas**
+  - Home gardeners, plant enthusiasts, and small-scale farmers.
+- **Key Flows**
+  - User visits the site → uploads a plant photo → receives instant health/disease prediction and advice.
+- **UI/UX**
+  - Simple, mobile-friendly interface.
+  - Clear instructions for taking/uploading good-quality photos.
+
+## Technical Architecture
+- **Frontend:** Streamlit
+- **Backend:** Python
+- **AI Model:** TensorFlow or PyTorch (image classification, disease detection)
+- **Database:** PostgreSQL (for user data and history)
+- **Image Storage:** AWS S3 or similar
+- **APIs:** REST endpoints for image upload, prediction, and results retrieval
+- **Infrastructure:** Deployable to AWS, Vercel, or similar
+
+## Development Roadmap
+- **MVP**
+  - User authentication (optional for MVP)
+  - Image upload and storage
+  - Integrate pre-trained plant health/disease model
+  - Display prediction results and care advice
+- **Future Enhancements**
+  - User accounts and history
+  - Model retraining with user feedback
+  - Support for more plant species and diseases
+  - Multi-language support
+
+## Logical Dependency Chain
+- Set up backend and image upload first
+- Integrate and test AI model
+- Build frontend for photo submission and results
+- Add optional features (history, authentication)
+
+## Risks and Mitigations
+- **Model Accuracy:** Use open-source datasets and pre-trained models; allow for future retraining.
+- **Image Quality:** Provide user guidance for good photos.
+- **Data Privacy:** Secure image storage and user data.
+
+## Appendix
+- Reference open-source plant disease datasets (e.g., PlantVillage)
+- List of supported plant species and diseases (to be expanded) 
