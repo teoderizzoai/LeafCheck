@@ -1,0 +1,14 @@
+{
+  "model_name": "Akshay0706/Plant-Village-1-Epochs-Model",
+  "architecture": "ViT-base-patch16-224-in21k",
+  "framework": "PyTorch",
+  "input_size": [
+    224,
+    224,
+    3
+  ],
+  "preprocessing": "Resize to 224x224, normalize as per ImageNet",
+  "output_classes_file": "plant_village_vit_classes.json",
+  "license": "Apache-2.0",
+  "source": "https://huggingface.co/Akshay0706/Plant-Village-1-Epochs-Model"
+}
