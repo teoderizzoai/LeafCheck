@@ -26,4 +26,39 @@ node_modules/
 
 # Task files
 tasks.json
-tasks/ 
+tasks/
+
+# --- Taskmaster-related files and directories ---
+# Ignore Taskmaster tasks, metadata, and generated files
+/tasks/
+/scripts/task-complexity-report.json
+/scripts/prd.txt
+*.mdc
+*.taskmaster*
+
+# --- Data and Datasets ---
+# Ignore large data directories (e.g., PlantVillage dataset)
+data/
+
+# --- Model and cache directories ---
+# Ignore Hugging Face and torch cache directories
+~/.cache/
+~/.huggingface/
+~/.torch/
+
+# --- Logs and outputs ---
+# Ignore log files and output artifacts
+*.log
+*.out
+
+# --- Python bytecode and virtual environments (for completeness) ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- Miscellaneous ---
+# Ignore Jupyter notebook checkpoints and system files
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db 
